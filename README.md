@@ -7,5 +7,5 @@ Projeto que integra uma atividade do curso "Java Spring Professional" da platafo
 - ORM
 
 ## Stack aplicada
-Java 21
-Spring Boot 4.0.8
+- Java 21
+- Spring Boot 4.0.8
