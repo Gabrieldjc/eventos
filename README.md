@@ -1,5 +1,5 @@
 ## Contexto
-Projeto que integra uma atividade do curso "Java Spring Professional" da plataforma Devsuperior. Sistema que gerencia informações de participantes de diversas atividades de um evento. Cada atividade possui nome, descrição, preço, e pode ser dividida em vários blocos de horários.
+Projeto que integra uma atividade do curso "Java Spring Professional" da plataforma [Devsuperior](https://devsuperior.com.br). Sistema que gerencia informações de participantes de diversas atividades de um evento. Cada atividade possui nome, descrição, preço, e pode ser dividida em vários blocos de horários.
 
 ## Conceitos aplicados
 •	Orientação a objetos
