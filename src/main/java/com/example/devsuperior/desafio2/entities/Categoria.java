@@ -18,4 +18,24 @@ public class Categoria {
 
     @OneToMany(mappedBy = "categoria")
     private List<Atividade> atividades = new ArrayList<>();
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public List<Atividade> getAtividades() {
+        return atividades;
+    }
 }
