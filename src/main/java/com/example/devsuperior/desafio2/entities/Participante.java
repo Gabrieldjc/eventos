@@ -2,6 +2,7 @@ package com.example.devsuperior.desafio2.entities;
 
 import jakarta.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -45,5 +46,18 @@ public class Participante {
 
     public Set<Atividade> getAtividades() {
         return atividades;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Participante that = (Participante) object;
+        return Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }

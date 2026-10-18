@@ -3,10 +3,7 @@ package com.example.devsuperior.desafio2.entities;
 import jakarta.persistence.*;
 import jakarta.servlet.http.Part;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_atividade")
@@ -78,5 +75,18 @@ public class Atividade {
 
     public List<Bloco> getBlocos() {
         return blocos;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Atividade atividade = (Atividade) object;
+        return Objects.equals(id, atividade.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }

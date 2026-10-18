@@ -3,6 +3,7 @@ package com.example.devsuperior.desafio2.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.Objects;
 
 @Entity
 @Table(name = "tb_bloco")
@@ -49,5 +50,18 @@ public class Bloco {
 
     public void setAtividade(Atividade atividade) {
         this.atividade = atividade;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Bloco bloco = (Bloco) object;
+        return Objects.equals(id, bloco.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
     }
 }
